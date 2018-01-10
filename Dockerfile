@@ -11,6 +11,4 @@ samba sipcrack sipdialer sipgrep siproxd sipsak smbc smbclient smbnetfs snmp soc
 telnet tftp tkmib traceroute winbind && \
 apt-get autoclean
 
-ENTRYPOINT ["/bin/bash && apt-get install macchanger tshark"]
-
-CMD ["ls"]
+ENTRYPOINT bash
